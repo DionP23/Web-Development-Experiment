@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    
+    <!--=============== SWIPER CSS ===============--> 
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <title>Support Center - Responsive Watches Website</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="home.html" class="nav__logo">
+                <i class='bx bxs-watch nav__logo-icon'></i> TimeKeepers
+            </a>
+            <ul class="nav__list">
+                <li class="nav__item"><a href="home.html" class="nav__link">Beranda</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                      Produk
+                      <i class="ri-arrow-down-s-line arrow-icon"></i> 
+                    </button>
+                  
+                    <div class="dropdown-content">
+                      <a href="products.html">Produk</a>
+                      <a href="featured.html">Terlaris</a>
+                      <a href="new.html">Terbaru</a>
+                    </div>
+                  </div>
+            </ul>
+            
+            <div class="nav__close" id="nav-close">
+                <i class='bx bx-x'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="support section container">
+            <h2 class="section__title">Support Center</h2>
+            <p class="support__description">
+                Welcome to the TimeKeepers Support Center. Here you can find answers to your questions, access customer support, and get help with your purchases.
+            </p>
+            
+            <div class="support__details">
+                <div class="support__faq">
+                    <h3 class="support__faq-title">Frequently Asked Questions</h3>
+                    <ul class="support__faq-list">
+                        <li class="support__faq-item">
+                            <h4>How do I track my order?</h4>
+                            <p>You can track your order using the tracking number provided in your order confirmation email.</p>
+                        </li>
+                        <li class="support__faq-item">
+                            <h4>What is the return policy?</h4>
+                            <p>We offer a 30-day return policy on all products. Items must be returned in their original condition.</p>
+                        </li>
+                        <li class="support__faq-item">
+                            <h4>How do I contact customer support?</h4>
+                            <p>You can contact our support team by emailing support@timekeepers.com or calling +1 (587) 209-3714.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="support__contact">
+                    <h3 class="support__contact-title">Contact Us</h3>
+                    <form action="#" class="support__contact-form">
+                        <div class="support__contact-group">
+                            <label for="name" class="support__contact-label">Name</label>
+                            <input type="text" id="name" class="support__contact-input" placeholder="Your Name">
+                        </div>
+                        <div class="support__contact-group">
+                            <label for="email" class="support__contact-label">Email</label>
+                            <input type="email" id="email" class="support__contact-input" placeholder="Your Email">
+                        </div>
+                        <div class="support__contact-group">
+                            <label for="message" class="support__contact-label">Message</label>
+                            <textarea id="message" class="support__contact-input" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="support__contact-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <h3 class="footer__title">Informasi Kami</h3>
+                <ul class="footer__list">
+                    <li>+1 (587) 209-3714</li>
+                    <li>Depok,Sleman,Yoyakarta</li>
+                    <li>Kode Pos 55283</li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">TIMEKEEPERS</h3>
+                <ul class="footer__links">
+                    <li>
+                        <a href="support-center.html" class="footer__link">Support Center</a>
+                    </li>
+                    <li>
+                        <a href="costumer-support.html" class="footer__link">Customer Support</a>
+                    </li>
+                    <li>
+                        <a href="about us.html" class="footer__link">Tentang Kami</a>
+                    </li>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Produk</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Jam Tangan</a></li>
+                    <li><a href="#" class="footer__link">Smart watch</a></li>
+                    <li><a href="#" class="footer__link">Aksesoris</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Media sosial</h3>
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+    </a>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

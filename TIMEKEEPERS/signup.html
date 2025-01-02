@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login and Sign Up</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Login Form -->
+        <div class="login" id="login">
+            <form action="" class="login__form">
+                <h2 class="login__title">Log In</h2>
+                
+                <div class="login__group">
+                    <div>
+                        <label for="email" class="login__label">Email</label>
+                        <input type="email" placeholder="Write your email" id="email" class="login__input">
+                    </div>
+                    
+                    <div>
+                        <label for="password" class="login__label">Password</label>
+                        <input type="password" placeholder="Enter your password" id="password" class="login__input">
+                    </div>
+                </div>
+                <div>
+                    <p class="login__signup">
+                        You do not have an account? <a href="#" id="show-signup">Sign up</a>
+                    </p>
+    
+                    <a href="#" class="login__forgot">You forgot your password</a>
+    
+                    <button type="submit" class="login__button">Log In</button>
+                </div>
+            </form>
+    
+            <i class="ri-close-line login__close" id="login-close"></i>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div class="signup" id="signup">
+            <form action="" class="signup__form">
+                <h2 class="signup__title">Sign Up</h2>
+                
+                <div class="signup__group">
+                    <div>
+                        <label for="signup-email" class="signup__label">Email</label>
+                        <input type="email" placeholder="Write your email" id="signup-email" class="signup__input">
+                    </div>
+                    
+                    <div>
+                        <label for="signup-password" class="signup__label">Password</label>
+                        <input type="password" placeholder="Enter your password" id="signup-password" class="signup__input">
+                    </div>
+                    
+                    <div>
+                        <label for="confirm-password" class="signup__label">Confirm Password</label>
+                        <input type="password" placeholder="Confirm your password" id="confirm-password" class="signup__input">
+                    </div>
+                </div>
+                <div>
+                    <p class="signup__login">
+                        Already have an account? <a href="#" id="show-login">Log In</a>
+                    </p>
+    
+                    <button type="submit" class="signup__button">Sign Up</button>
+                </div>
+            </form>
+    
+            <i class="ri-close-line signup__close" id="signup-close"></i>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

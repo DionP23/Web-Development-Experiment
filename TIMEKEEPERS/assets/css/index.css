@@ -1,0 +1,31 @@
+.hidden {
+    display: none;
+}
+.notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 300px;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+}
+
+.notification.show {
+    display: block;
+}
+
+.nav__shop.active {
+    color: red;
+    transition: color 0.3s ease;
+}
+.logout{
+    text-decoration: none;
+    color: black;
+  }

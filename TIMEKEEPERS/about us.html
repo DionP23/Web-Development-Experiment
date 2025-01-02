@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== SWIPER CSS ===============--> 
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>About Us - Responsive Watches Website</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="home.html" class="nav__logo">
+                <i class='bx bxs-watch nav__logo-icon'></i> TimeKeepers
+            </a>
+            <ul class="nav__list">
+                <li class="nav__item"><a href="home.html" class="nav__link">Beranda</a></li>
+                
+                <div class="dropdown">
+                    <button class="dropbtn">
+                      Produk
+                      <i class="ri-arrow-down-s-line arrow-icon"></i> 
+                    </button>
+                  
+                    <div class="dropdown-content">
+                      <a href="products.html">Produk</a>
+                      <a href="featured.html">Terlaris</a>
+                      <a href="new.html">Terbaru</a>
+                    </div>
+                  </div>    
+        
+            </ul>
+
+            
+            <div class="nav__close" id="nav-close">
+                <i class='bx bx-x' ></i>
+            </div>
+        </div>
+        <div class="nav__btns">
+            <!-- Theme change button -->
+            <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+            <div class="nav__shop" id="cart-shop">
+                <i class='bx bx-shopping-bag' ></i>
+            </div>
+            <i class="ri-user-line nav__login" id="login-btn"></i>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt' ></i>
+            </div>
+        </div>
+        </nav>
+    </header>
+
+            <!--==================== CART ====================-->
+            <div class="cart" id="cart">
+                <i class='bx bx-x cart__close' id="cart-close"></i>
+    
+                <h2 class="cart__title-center">Keranjang</h2>
+    
+                <div class="cart__container">
+                    <article class="cart__card">
+                        <div class="cart__box">
+                            <img src="assets/img/featured1.png" alt="" class="cart__img">
+                        </div>
+    
+                        <div class="cart__details">
+                            <h3 class="cart__title">SEIKO</h3>
+                            <span class="cart__price">Rp2.000.000</span>
+    
+                            <div class="cart__amount">
+                                <div class="cart__amount-content">
+                                    <span class="cart__amount-box">
+                                        <i class='bx bx-minus' ></i>
+                                    </span>
+    
+                                    <span class="cart__amount-number">1</span>
+    
+                                    <span class="cart__amount-box">
+                                        <i class='bx bx-plus' ></i>
+                                    </span>
+                                </div>
+    
+                                <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="cart__card">
+                        <div class="cart__box">
+                            <img src="assets/img/featured2.png" alt="" class="cart__img">
+                        </div>
+    
+                        <div class="cart__details">
+                            <h3 class="cart__title">Rolex</h3>
+                            <span class="cart__price">Rp200.000.000</span>
+    
+                            <div class="cart__amount">
+                                <div class="cart__amount-content">
+                                    <span class="cart__amount-box">
+                                        <i class='bx bx-minus' ></i>
+                                    </span>
+    
+                                    <span class="cart__amount-number">1</span>
+    
+                                    <span class="cart__amount-box">
+                                        <i class='bx bx-plus' ></i>
+                                    </span>
+                                </div>
+    
+                                <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                            </div>
+                        </div>
+                    </article>
+    
+                    <article class="cart__card">
+                        <div class="cart__box">
+                            <img src="assets/img/new1.png" alt="" class="cart__img">
+                        </div>
+    
+                        <div class="cart__details">
+                            <h3 class="cart__title">Amazfit GTR 3 Pro</h3>
+                            <span class="cart__price">Rp3.999.999</span>
+    
+                            <div class="cart__amount">
+                                <div class="cart__amount-content">
+                                    <span class="cart__amount-box">
+                                        <i class='bx bx-minus' ></i>
+                                    </span>
+    
+                                    <span class="cart__amount-number">1</span>
+    
+                                    <span class="cart__amount-box">
+                                        <i class='bx bx-plus' ></i>
+                                    </span>
+                                </div>
+                                <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                            </div>
+    
+                            <div class="login" id="login">
+                                <form action="" class="login__form">
+                                   <h2 class="login__title">Log In</h2>
+                                   
+                                   <div class="login__group">
+                                      <div>
+                                         <label for="email" class="login__label">Email</label>
+                                         <input type="email" placeholder="Write your email" id="email" class="login__input">
+                                      </div>
+                                      
+                                      <div>
+                                         <label for="password" class="login__label">Password</label>
+                                         <input type="password" placeholder="Enter your password" id="password" class="login__input">
+                                      </div>
+                                   </div>
+                                   <div>
+                                      <p class="login__signup">
+                                         You do not have an account? <a href="#">Sign up</a>
+                                      </p>
+                          
+                                      <a href="#" class="login__forgot">
+                                         You forgot your password
+                                      </a>
+                          
+                                      <button type="submit" class="login__button">Log In</button>
+                                   </div>
+                                </form>
+                       
+                                <i class="ri-close-line login__close" id="login-close"></i>
+                             </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="cart__prices">
+                    <span class="cart__prices-item">3 items</span>
+                    <span class="cart__prices-total">Rp205.999.999</span>
+                </div>
+            </div>
+             
+    <main class="main">
+        <section class="about section container">
+            <h2 class="section__title">Tentang Kami</h2>
+            <p class="about__description">
+                 Timekeepers adalah layanan khusus yang menyediakan berbagai jenis jam tangan dan smartwatch berkualitas tinggi.
+                 Dengan fokus pada inovasi dan gaya, Timekeepers menawarkan pilihan produk dari merek-merek ternama yang memenuhi kebutuhan pengguna modern.
+                </p>
+                
+            <div class="about__details">
+                <p>
+                    Timekeepers didirikan dengan tujuan memberikan pengalaman berbelanja jam tangan yang luar biasa, menggabungkan teknologi canggih dengan desain elegan. 
+                    Kami memahami bahwa jam tangan bukan hanya alat untuk melihat waktu, tetapi juga merupakan pernyataan gaya dan identitas pribadi.
+                </p> 
+                <p>
+                    Kunjungi kami atau hubungi tim dukungan kami untuk mempelajari lebih lanjut tentang produk kami dan bagaimana kami dapat membantu Anda menemukan jam tangan yang cocok.
+                </p>
+                  <!-- Our Team Section -->
+            <div class="about__team">
+                <h2 class="section__title">Team Kami</h2>
+                <div class="team__members grid">
+                    <div class="team__member">
+                        <img src="assets/img/testtt.jpg" alt="Team Member" class="team__member-img">
+                        <h3 class="team__member-name">Emmanuel Thomas</h3>
+                        <p class="team__member-role">Founder & CEO</p>
+                    </div>
+                    <div class="team__member">
+                        <img src="assets/img/team1.jpeg" alt="Team Member" class="team__member-img">
+                        <h3 class="team__member-name">Faisal Akbar</h3>
+                        <p class="team__member-role">Founder & CEOer</p>
+                    </div>
+                    <div class="team__member">
+                        <img src="assets/img/team3.jpeg" alt="Team Member" class="team__member-img">
+                        <h3 class="team__member-name">Bena Mahogra</h3>
+                        <p class="team__member-role">Founder & CEO</p>
+                    </div>
+                    <div class="team__member">
+                        <img src="assets/img/team2.jpeg" alt="Team Member" class="team__member-img">
+                        <h3 class="team__member-name">Dimas Andhika</h3>
+                        <p class="team__member-role">Founder & CEO</p>
+                    </div>
+                    <div class="team__member">
+                        <img src="assets/img/team1.jpeg" alt="Team Member" class="team__member-img">
+                        <h3 class="team__member-name">Muhhamad Dion</h3>
+                        <p class="team__member-role">Founder & CEO</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <h3 class="footer__title">Informasi Kami</h3>
+
+                <ul class="footer__list">
+                    <li>+1 (587) 209-3714</li>
+                    <li>Depok,Sleman,Yoyakarta</li>
+                    <li>Kode Pos 55283</li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">TIMEKEEPERS</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="support-center.html" class="footer__link">Support Center</a>
+                    </li>
+                    <li>
+                        <a href="costumer-support.html" class="footer__link">Customer Support</a>
+                    </li>
+                    <li>
+                        <a href="about us.html" class="footer__link">Tentang Kami</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Produk</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#" class="footer__link">Jam Tangan</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Smart watch</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Aksesoris</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Media sosial</h3>
+
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up"> 
+        <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+    </a>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
